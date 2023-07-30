@@ -7,7 +7,7 @@ class Product(models.Model):
     SKU = models.CharField(max_length=20)
     price = models.FloatField()
     product_image = models.ImageField(upload_to='poroduct_image', blank=True, null=True)
-    descripcion = models.TextField(blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
 
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, related_name='products', null=True, blank=True)
     subcategory = models.ForeignKey(SubCategory, on_delete=models.SET_NULL, related_name='products', null=True, blank=True)
