@@ -34,15 +34,15 @@ THIRD_APPS = [
     'dj_rest_auth',
     'dj_rest_auth.registration',
 
-    # 'allauth',
-    # 'allauth.account'
-    # 'allauth.socialaccount'
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 ]
 
 MY_APPS = [
     'products',
     'users',
-    'admin_settings'
+    'admin_settings',
 ]
 
 INSTALLED_APPS = BASE_APPS + THIRD_APPS + MY_APPS
@@ -117,8 +117,6 @@ TIME_ZONE = 'America/Argentina/Buenos_Aires'
 
 USE_I18N = True
 
-USE_L10N = True
-
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
@@ -182,4 +180,4 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 #<---------------------- Email configurations ---------------------->
 
 
-#AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'users.User'
